@@ -1,0 +1,62 @@
+{
+  "0": {
+    "Set name": "None",
+    "Name": "None",
+    "Cost": 1,
+    "Main stat 1": ["Atk%", "bonusAtk", 18],
+    "Main stat 2": ["Hp", "Hp", 2280],
+    "Sub stat 1": ["Crit Rate", "cr", 6.3],
+    "Sub stat 2": ["Crit Rate", "cr", 6.3],
+    "Sub stat 3": ["Crit Rate", "cr", 6.3],
+    "Sub stat 4": ["Crit Rate", "cr", 6.3],
+    "Sub stat 5": ["Crit Rate", "cr", 6.3]
+  },
+  "1": {
+    "Set name": "None",
+    "Name": "None",
+    "Cost": 1,
+    "Main stat 1": ["Atk%", "bonusAtk", 18],
+    "Main stat 2": ["Hp", "Hp", 2280],
+    "Sub stat 1": ["Crit Rate", "cr", 6.3],
+    "Sub stat 2": ["Crit Rate", "cr", 6.3],
+    "Sub stat 3": ["Crit Rate", "cr", 6.3],
+    "Sub stat 4": ["Crit Rate", "cr", 6.3],
+    "Sub stat 5": ["Crit Rate", "cr", 6.3]
+  },
+  "2": {
+    "Set name": "None",
+    "Name": "None",
+    "Cost": 4,
+    "Main stat 1": ["Hp%", "bonusHp", 33],
+    "Main stat 2": ["Atk", "Atk", 150],
+    "Sub stat 1": ["Crit Rate", "cr", 6.3],
+    "Sub stat 2": ["Crit Rate", "cr", 9.3],
+    "Sub stat 3": ["Crit Rate", "cr", 6.3],
+    "Sub stat 4": ["Crit Rate", "cr", 6.3],
+    "Sub stat 5": ["Crit Rate", "cr", 6.3]
+  },
+  "3": {
+    "Set name": "None",
+    "Name": "None",
+    "Cost": 1,
+    "Main stat 1": ["Atk%", "bonusAtk", 18],
+    "Main stat 2": ["Hp", "Hp", 2280],
+    "Sub stat 1": ["Crit Rate", "cr", 6.3],
+    "Sub stat 2": ["Crit Rate", "cr", 6.3],
+    "Sub stat 3": ["Crit Rate", "cr", 6.3],
+    "Sub stat 4": ["Crit Rate", "cr", 6.3],
+    "Sub stat 5": ["Crit Rate", "cr", 6.3]
+  },
+  "4": {
+    "Set name": "None",
+    "Name": "None",
+    "Cost": 1,
+    "Main stat 1": ["Atk%", "bonusAtk", 18],
+    "Main stat 2": ["Hp", "Hp", 2280],
+    "Sub stat 1": ["Crit Rate", "cr", 6.3],
+    "Sub stat 2": ["Crit Rate", "cr", 6.3],
+    "Sub stat 3": ["Crit Rate", "cr", 6.3],
+    "Sub stat 4": ["Crit Rate", "cr", 6.3],
+    "Sub stat 5": ["Crit Rate", "cr", 6.3]
+  }
+}

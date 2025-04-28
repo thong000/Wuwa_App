@@ -1,0 +1,8 @@
+{
+    "Name":"Blazing Justice",
+    "Type":"Gauntlets",
+    "Base":["Base Atk","baseAtk",587],
+    "Sub":["Crit DMG","cd",48.6],
+    "Skill name":"Darkness Breaker",
+    "Description":"Increases ATK by 12%.\nCasting Resonance Liberation grants the following effects: Dealing damage ignores 8% of the target's DEF and Amplifies Spectro Frazzle DMG dealt by 50% for 6s. Retriggering the effect resets its duration."
+}

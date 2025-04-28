@@ -1,0 +1,8 @@
+{
+    "Name":"Woodland Aria",
+    "Type":"Pistols",
+    "Base":["Base Atk","baseAtk",500],
+    "Sub":["Crit Rate","cr",36],
+    "Skill name":"Lingering Summer Tune",
+    "Description":"ATK is increased by 12%.\nWhen inflicting Aero Erosion on the target, gain 24% Aero DMG Bonus for 10s. Hitting targets with Aero Erosion reduces their Aero RES by 10% for 20s."
+}

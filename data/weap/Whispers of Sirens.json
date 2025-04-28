@@ -1,0 +1,8 @@
+{
+    "Name":"Whispers of Sirens",
+    "Type":"Rectifier",
+    "Base":["Base Atk","baseAtk",500],
+    "Sub":["Crit DMG","cd",72],
+    "Skill name":"From the Deep",
+    "Description":"Increases ATK by 12%.\nCasting Echo Skill within 10s after casting Intro Skill or Basic Attacks grants 1 stack of Gentle Dream. Echoes with the same name can only trigger this effect once, stacking up to 2 times, lasting for 10s. When reaching 2 stacks, casting Echo Skill no longer resets the duration of this effect. This effect activates up to once per 10s. Switching to another Resonator ends this effect early.\nWith 1 stack: Grants 40% Basic Attack DMG Bonus.\nWith 2 stacks: Ignores 12% of the target's Havoc RES."
+}
