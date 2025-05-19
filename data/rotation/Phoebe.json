@@ -1,0 +1,38 @@
+{
+  "Stat": {
+    "baseAtk": 0,
+    "bonusAtk": 0,
+    "flatAtk": 0,
+    "Atk": 0,
+    "bonusBA": 0,
+    "ampBA": 0,
+    "bonusHA": 0,
+    "ampHA": 0,
+    "bonusRS": 0,
+    "ampRS": 0,
+    "bonusRL": 0,
+    "ampRL": 0,
+    "bonusSpectro": 0,
+    "ampSpectro": 0,
+    "cd": 150,
+    "cr": 5,
+    "er": 100,
+    "level": 90
+  },
+  "Team Buff":{
+    
+  }
+  ,
+  "Rotation": {
+    "__comment__":["Scale","Buff dict",["Type DMG"],"Scale type"],
+    "Intro DMG": [198.81,{},["ampIntro","bonusSpectro","ampSpectro"],"Atk"],
+    "Absolution Litany DMG": [638.19,{},["bonusHA","ampHA","bonusSpectro","ampSpectro"],"Atk"],
+    "To Where Light Shines DMG": [125.26,{},["bonusRs","ampHA","bonusSpectro","ampSpectro"],"Atk"],
+    "Dawn of Enlightenment DMG": [401.6,{"Mul":255},["bonusRL","ampRL","bonusSpectro","ampSpectro"],"Atk"],
+    "Chamuel's Star: Stage 1 DMG x4": [237.4,{},["bonusBA","ampBA","bonusSpectro","ampSpectro"],"Atk"],
+    "Chamuel's Star: Stage 2 DMG x4": [318.16,{},["bonusBA","ampBA","bonusSpectro","ampSpectro"],"Atk"],
+    "Chamuel's Star: Stage 3 DMG x4": [694.32,{},["bonusBA","ampBA","bonusSpectro","ampSpectro"],"Atk"],
+    "Heavy Attack: Starflash DMG x4": [992.28,{"Amp":256},["bonusBA","ampBA","bonusSpectro","ampSpectro"],"Atk"],
+    "Outro DMG":[528.41,{},["ampOutro","bonusSpectro","ampSpectro"],"Atk"]
+  }
+}

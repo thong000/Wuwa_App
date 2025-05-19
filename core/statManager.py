@@ -1,5 +1,5 @@
 from enum import Enum
-from core.fileHandler import printDictPretty
+#from core.fileHandler import printDictPretty
 
 
 
@@ -25,16 +25,23 @@ class Store(Enum):
     VAL=2
     STATUS=3
 
-
+def is_float(s: str) -> bool:
+    try:
+        float(s)
+        return True
+    except ValueError:
+        return False
 
 class Stat:
     def __init__(self):
         self.baseAtk=0
         self.bonusAtk=0
         self.flatAtk=0
+        
         self.baseDef=0
         self.bonusDef=0
         self.flatDef=0
+        
         self.baseHp=0
         self.bonusHp=0
         self.flatHp=0
@@ -72,30 +79,75 @@ class Stat:
         self.ampAero=0
         self.ampAeroErosion=0
         
-        self.bonusFushion=0
-        self.ampFushion=0
+        self.bonusFusion=0
+        self.ampFusion=0
         self.ampFusionBurst=0
         
         self.bonusElectro=0
         self.ampElectro=0   
         self.ampElectroFlare=0  
-        
+        self.ampIntro=0
+        self.ampOutro=0
         self.cd=150
         self.cr=5
         self.er=100
         self.ignoreDef=0
         self.level=90
-       
+        self.healing=0
+        self.mul=0
        
     def update(self):
         self.Atk=self.baseAtk*(1+self.bonusAtk/100)+self.flatAtk 
         self.Def=self.baseDef*(1+self.bonusDef/100)+self.flatDef
         self.Hp=self.baseHp*(1+self.bonusHp/100)+self.flatHp
     def setStat(self,type,value):
-        if hasattr(self,type):
-            setattr(self,type,value)
-       
-       
+        if is_float(value):
+            if hasattr(self,type):
+                setattr(self,type,float(value))
+
+        
+    def dealDmg(self,data:dict)-> int:
+        
+        def sumBonus(arr:list):
+            total=0
+            for elem in arr:
+                if hasattr(self,elem) and elem.startswith("bonus"):
+                    total+=getattr(self,elem)
+            return total
+        
+        def sumAmp(arr:list):
+            total=0
+            for elem in arr:
+                if hasattr(self,elem)and elem.startswith("amp"):
+                    total+=getattr(self,elem)
+            return total  
+
+
+
+
+        main=0
+        if data["scaleType"]=="Atk":
+            main=self.baseAtk*(1+self.bonusAtk/100) + self.flatAtk
+        elif data["scaleType"]=="Hp":
+            main=self.baseHp*(1+self.bonusHp/100) + self.flatHp
+        elif data["scaleType"]=="Def":
+            main=self.baseDef*(1+self.bonusDef/100) + self.flatDef
+            
+        bonus=sumBonus(data["buff"])
+        amp=sumAmp(data["buff"])
+        crit=getattr(self,"cd")
+        res=20
+        scale=data["scale"]*(1+getattr(self,"mul"))
+        
+        result=main*(1+bonus/100)*(1+amp/100)*(crit/100)*(1-res/100)*(scale/100)*((800+8*90)/(800+8*90+(792+8*100)*(1)))
+        
+        return round(result)
+        
+        
+        
+        
+         
+                
     def addStatFromData(self,data):
         if isinstance(data,dict):
             for key,val in data.items():
@@ -119,4 +171,4 @@ class Stat:
      
         
         
-        
+

@@ -128,6 +128,8 @@ def appendJson(key, new_dict, filename,root):
     filepath = Path(filename)
     filepath.parent.mkdir(parents=True, exist_ok=True)
 
+    print(filepath)
+
     if os.path.exists(filename):
 
         with open(filename, 'r', encoding='utf-8') as file:
@@ -196,3 +198,41 @@ def removeKeyByShift(filename, keyToRemove,root):
         json.dump(newData, f, indent=4, ensure_ascii=False)
 
     print(f"Đã xoá key '{keyToRemove}' thành công.")
+    
+    
+def getVal(key,fileName,root):
+    data=readJson(fileName,root)
+    if data is None:
+        return None
+    else:
+        if key in data:
+            return data[key]
+        else:
+            return None
+ 
+ 
+def writeJson(data, file_path,root, indent=4, ensure_ascii=False):
+    file_path=root+"/"+file_path
+    try:
+        with open(file_path, 'w', encoding='utf-8') as f:
+            json.dump(data, f, indent=indent, ensure_ascii=ensure_ascii)
+        return True
+    except Exception as e:
+        print(f"Lỗi khi ghi file JSON: {e}")
+        return False 
+ 
+       
+def change_val_json(file_name:str,root:str,key:str,new_val:str):
+    data=readJson(file_name,root)
+    
+    if data is None:
+        return False
+    
+    if key in data:
+        data[key]=new_val
+        
+    writeJson(data,file_name,root)
+    return True    
+    
+    
+    

@@ -19,7 +19,7 @@
         "Traffic Illuminator",
         "Lava Larva",
         "Cuddle Wuddle",
-        "Nightmare: Inferno Rider",
+        "Nightmare Inferno Rider",
         "Electro Predator",
         "Fusion Warrior",
         "Snip Snap",
@@ -37,8 +37,8 @@
         "Traffic Illuminator",
         "Lumiscale Construct",
         "Cuddle Wuddle",
-        "Nightmare: Thundering Mephis",
-        "Nightmare: Tempest Mephis",
+        "Nightmare Thundering Mephis",
+        "Nightmare Tempest Mephis",
         "Vanguard Junrock",
         "Fission Junrock",
         "Electro Predator",
@@ -59,7 +59,7 @@
         "Chirpuff",
         "Traffic Illuminator",
         "Dwarf Cassowary",
-        "Nightmare: Feilian Beringal",
+        "Nightmare Feilian Beringal",
         "Fusion Warrior",
         "Whiff Whaff",
         "Aero Predator",
@@ -89,7 +89,7 @@
         "Crownless",
         "Chirpuff",
         "Dreamless",
-        "Nightmare: Crownless",
+        "Nightmare Crownless",
         "Havoc Warrior",
         "Tick Tack",
         "Excarat",
@@ -151,8 +151,8 @@
     ],
     "Frosty Resolve":[
         "Galescourge Stalker",
-        "Chop Chop: Leftless",
-        "Chop Chop: Rightless",
+        "Chop Chop Leftless",
+        "Chop Chop Rightless",
         "Hocus Pocus",
         "Lottie Lost",
         "Chest Mimic",
@@ -162,17 +162,17 @@
         "Cuddle Wuddle",
         "Sentry Construct",
         "Golden Junrock",
-        "Nightmare: Lampylumen Myriad"
+        "Nightmare Lampylumen Myriad"
     ],
     "Eternal Radiance":[
         "Frostscourge Stalker",
-        "Chop Chop: Headless",
+        "Chop Chop Headless",
         "Fae Ignis",
         "Diggy Duggy",
         "Diurnus Knight",
         "Abyssal Mercator",
         "Vitreum Dancer",
-        "Nightmare: Mourning Aix",
+        "Nightmare Mourning Aix",
         "Golden Junrock",
         "Aero Prism",
         "Rage Against the Statue",
@@ -190,7 +190,7 @@
         "Abyssal Gladius",
         "Cuddle Wuddle",
         "Lorelei",
-        "Nightmare: Impermanence Heron",
+        "Nightmare Impermanence Heron",
         "La Guardia",
         "Electro Drake"
     ],
@@ -205,14 +205,14 @@
         "Chop Chop",
         "Vitreum Dancer",
         "Hecate",
-        "Nightmare: Tempest Mephis",
+        "Nightmare Tempest Mephis",
         "Calcified Junrock",
-        "Nightmare: Lampylumen Myriad"
+        "Nightmare Lampylumen Myriad"
     ],
     "Tidebreaking Courage":[
-        "Chop Chop: Headless",
-        "Chop Chop: Leftless",
-        "Chop Chop: Rightless",
+        "Chop Chop Headless",
+        "Chop Chop Leftless",
+        "Chop Chop Rightless",
         "Lottie Lost",
         "Diggy Duggy",
         "Diurnus Knight",
@@ -234,6 +234,6 @@
         "Electro Drake",
         "Glacio Drake",
         "Capitaneus",
-        "Reminiscence: Fleurdelys"
+        "Reminiscence Fleurdelys"
     ]
 }

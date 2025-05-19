@@ -2,3 +2,7 @@ temp.txt
 __pycache__
 temp.py
 resonatorTab.py
+temp/
+log/
+save/
+gachaHistory/
